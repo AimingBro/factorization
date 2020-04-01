@@ -26,7 +26,7 @@ int		main(int argc, char **argv)
 	{
 		flag = digit_check(argv[1]);
 		if(flag == -1)
-			printf("올바른 값을 입력하세요.\n");
+			printf("양의 정수를 입력하세요.\n");
 		else if(flag == -2)
 			printf("숫자의 범위를 확인 하세요.(2 ~ 4,294,967,295)\n");
 		else
