@@ -28,7 +28,10 @@ int		main(int argc, char **argv)
 		if(flag == -1)
 			printf("양의 정수를 입력하세요.\n");
 		else if(flag == -2)
+		{
+			printf("!!!");
 			printf("숫자의 범위를 확인 하세요.(2 ~ 4,294,967,295)\n");
+		}
 		else
 		{
 			num = ft_atoull(argv[1]);
@@ -65,7 +68,7 @@ int		digit_check(char *str)
 			}
 			i++;
 		}
-		if(i > 10 || (str[0] == '+' && i > 11))
+		if((str[0] != '+' && i > 10) || (str[0] == '+' && i > 11))
 			return (-2);
 	}
 	return (i);
